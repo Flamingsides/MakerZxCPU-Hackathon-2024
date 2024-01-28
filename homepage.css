@@ -1,4 +1,4 @@
-#homepage #account *{
+#homepage *, #account *, .item-details-page *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -55,7 +55,7 @@ nav ul li{
     color: rgb(224, 54, 82)
 }
 
-#homepage p, #account p {
+#homepage p, #account p, .item-details-page p {
     color: #555;
 }
 

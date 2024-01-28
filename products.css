@@ -1,10 +1,10 @@
 @font-face {
     font-family: comic;
-    src: url('animeace_b.ttf');
+    src: url('fonts/animeace_b.ttf');
 }
 
 body{
-    background-image: url('bg.jpg');
+    background-image: url('imgs/BG1.jpeg');
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -12,7 +12,7 @@ body{
     font-family: comic ;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -112,13 +112,14 @@ body{
     position: relative;
     text-align: center;
 }
-
 .select:focus{
     outline: red;
 }
 
 .col4{
+    background-color: lightblue;   
     flex-basis: 25%;
+    justify-content: space-between;
     padding: 10px;
     min-width: 200px;
     margin-bottom: 50px;
