@@ -1,1 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200&display=swap');
 
+@font-face {
+    font-family: 'SpiderMan';
+
+    src: url('./fonts/The-Amazing-Spider-Man.ttf') format('embedded-opentype'), /* Internet Explorer */
+         url('./fonts/The-Amazing-Spider-Man.ttf') format('woff'),              /* Pretty Modern Browsers */
+         url('./fonts/The-Amazing-Spider-Man.ttf') format('truetype'),          /* Safari, Android, iOS */
+         url('./fonts/The-Amazing-Spider-Man.ttf') format('svg'),               /* Legacy iOS */
+         url('./fonts/The-Amazing-Spider-Man.ttf') format('woff2');             /* Super Modern Browsers */
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* H1, p {
+    font-family: SpiderMan;
+} */
+
+body {
+    font-family: sans-serif;
+}
+
+#account {
+    background-image: url("./imgs/spiderman-hanging-1920x1271.jpg");
+    background-position: 0% 60%;
+
+    /* Full height */
+    height: 100vh;
+    padding: 10%;
+
+    /* Center and scale background image properly */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    text-align: center;
+}
+
+#signin-tab {
+    width: 40%;
+    height: 40%;
+    min-width: 100px;
+
+    position: relative;
+    left: 60%;
+    overflow: auto;
+
+    padding: 8%;
+    text-align: center;
+
+    background-color: #FAF9F6;
+    border-radius: 5px;
+}
+
+#signin-button {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
