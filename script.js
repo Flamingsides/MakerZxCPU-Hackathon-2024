@@ -75,4 +75,13 @@ document.addEventListener("DOMContentLoaded", function() {
 			signInTab.innerHTML = `<a href="#" class="btn btn-secondary-outline" onclick="signOut();">Sign out</a>`;
 		}
 	}
+
+	document.querySelector("#item-image").addEventListener('click', function() {
+		size_chart = document.querySelector("#size-chart");
+		size_chart.style.display = "block";
+	});
+
+	document.querySelector("#size-chart").addEventListener('click', function(){
+		this.style.display = "none";
+	});
 });

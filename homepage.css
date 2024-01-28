@@ -7,12 +7,12 @@
 
 @font-face{
     font-family: comic-font;
-    src: url(crimefighter-bb.regular.ttf);
+    src: url(fonts/crimefighter-bb.regular.ttf);
 }
 
 @font-face{
     font-family: comic-font;
-    src: url(crimefighter-bb.bold.ttf);
+    src: url(fonts/crimefighter-bb.bold.ttf);
     font-weight: bold;
 }
 .navbar{

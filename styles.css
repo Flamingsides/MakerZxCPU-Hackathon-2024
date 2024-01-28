@@ -13,13 +13,80 @@
     font-style: normal;
 }
 
-/* H1, p {
+.item-purchase-text,
+.item-purchase-button,
+.item-purchase-motivation,
+.item-motivation-bubble,
+.item-price,
+.item-discount-bubble,
+.item-title
+{
+	animation: fadeInAnimation ease 3s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+.item-purchase-text,
+.item-purchase-button,
+.item-purchase-motivation,
+.item-motivation-bubble,
+.item-price,
+.item-discount-bubble,
+.item-title,
+.item-image {
+    &:hover {
+        transform: scale(1.02);
+    }
+}
+
+.item-image {
+    animation: moveUpFadeIn ease 2s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+.item-spiderman {
+    animation: leftToRight ease 1s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes moveUpFadeIn {
+	from {
+		opacity: 0;
+        top: 50%;
+	}
+	to {
+		opacity: 1;
+        top: 35%;
+	}
+}
+
+@keyframes leftToRight {
+	from {
+		left: -5%
+	}
+	to {
+		left: -2%
+	}
+}
+
+@keyframes fadeInAnimation {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+/* H4 {
     font-family: SpiderMan;
 } */
 
-body {
+/* body {
     font-family: sans-serif;
-}
+} */
 
 #account {
     background-image: url("./imgs/spiderman-hanging-1920x1271.jpg");
@@ -42,11 +109,13 @@ body {
     height: 40%;
     min-width: 100px;
 
-    position: relative;
+    /* position: relative;
     left: 60%;
-    overflow: auto;
+    overflow: auto; */
 
-    padding: 8%;
+    transform: translateX(70%);
+
+    padding: 5%;
     text-align: center;
 
     background-color: #FAF9F6;
@@ -57,4 +126,144 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+}
+
+.item-image {
+    width: 40%;
+}
+
+#single-item {
+    background-image: url("imgs/product-focus-bg.jpg");
+}
+
+.background {
+    width: 100%;
+}
+
+.item-image {
+    position: absolute;
+    top: 35%;
+    left: 28%;
+    /* transform: translate(-50%, -50%); */
+}
+
+.item-title {
+    position: absolute;
+    top: 33%;
+    left: 40%;
+
+    color: azure;
+}
+
+.item-discount-bubble {
+    width: 20%;
+
+    position: absolute;
+    left: 70%;
+    top: 60%;
+}
+
+.item-price {
+    border-color: black;
+    border-width: 2px;
+    /* border-style: solid; */
+
+    text-align: center;
+
+    width: 14%;
+    height: 10%;
+
+    position: absolute;
+    left: 72%;
+    top: 66%;
+
+    color: green;
+    font-style: italic;
+    font-size: 31px;
+    font-family: 'SpiderMan';
+}
+
+.item-motivation-bubble {
+    width: 30%;
+
+    position: absolute;
+    left: 5%;
+    top: 40%;
+}
+
+.item-purchase-motivation {
+    /* display: block; */
+    width: 18%;
+    font-size: 25px;
+    position: absolute;
+    left: 12%;
+    top: 60%;
+}
+
+.item-purchase-button {
+    width: 20%;
+
+    position: absolute;
+    left: 40%;
+    top: 120%;
+}
+
+.item-purchase-text {
+    width: 20%;
+    font-size: 25px;
+    color: white;
+    font-style: bold;
+
+    position: absolute;
+    left: 44%;
+    top: 123.5%;
+
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+root {
+    --purchase-button-scale: 1;
+}
+
+.item-purchase-button:hover {
+    --purchase-button-scale: 1.02;
+    transform: scale(var(--purchase-button-scale));
+}
+
+.item-spiderman {
+    position: absolute;
+    top: 88%;
+    left: -2%;
+    width: 20%;
+    transform: scaleX(-1);
+}
+
+.size-chart {
+    position: absolute;
+    display: none;
+    width: 40%;
+    left: 50%;
+    right: 50%;
+    transform: translate(50%, 50%);
+}
+
+/* .item-purchase-button:hover::after {
+    --purchase-button-scale: 1;
+    transform: scale(var(--purchase-button-scale));
+}
+
+.item-purchase-text:hover {
+    --purchase-button-scale: 1.02
+    transform: scale(var(--purchase-button-scale));
+}
+
+.item-purchase-text:hover::after {
+    --purchase-button-scale: 1
+    transform: scale(var(--purchase-button-scale));
+} */
+
+.multiline {
+    white-space: pre-wrap;
 }
