@@ -1,4 +1,4 @@
-#homepage *, #account *, .item-details-page *{
+.item-details-page * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -15,6 +15,7 @@
     src: url(fonts/crimefighter-bb.bold.ttf);
     font-weight: bold;
 }
+
 .navbar{
     padding: 0;
     width: 100%;
@@ -135,6 +136,7 @@ nav ul li{
     height: 100%;
     background-color:rgb(255, 213, 0);
     text-align: center;
+    font-family: comic-font;
 }
 
 .footer p{

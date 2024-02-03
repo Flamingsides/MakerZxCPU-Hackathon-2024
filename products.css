@@ -3,6 +3,17 @@
     src: url('fonts/animeace_b.ttf');
 }
 
+@font-face{
+    font-family: comic-font;
+    src: url(fonts/crimefighter-bb.regular.ttf);
+}
+
+@font-face{
+    font-family: comic-font;
+    src: url(fonts/crimefighter-bb.bold.ttf);
+    font-weight: bold;
+}
+
 body{
     background-image: url('imgs/BG1.jpeg');
     background-size: 100% 100%;
@@ -17,7 +28,7 @@ body{
     padding: 0;
     box-sizing: border-box;
 }
-.navbar{
+/* .navbar{
     padding: 0;
     width: 100%;
     background-color: rgb(255, 213, 0);
@@ -51,7 +62,7 @@ nav ul li{
 
 .navbar a:hover{
     color: rgb(224, 54, 82)
-}
+} */
 
 .container{
     margin-top: -250px;
@@ -108,7 +119,7 @@ nav ul li{
 .image2{
     padding-top: 5px;
     width: 70px;
-    margin-right: -100px;
+    transform: translateX(3.2%);
 }
 
 .col2 img{
@@ -238,6 +249,7 @@ nav ul li{
     height: 100%;
     background-color:rgb(255, 213, 0);
     text-align: center;
+    font-family: comic-font;
 }
 
 .footer p{
@@ -249,4 +261,48 @@ nav ul li{
 
 body {
     max-height:100vh;
+}
+
+/* Ryan's Navbar CSS */
+/* Ryan's Navbar CSS */
+.navbar {
+    padding: 0;
+    width: 100%;
+    background-color: rgb(255, 213, 0);
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    padding-left: 25px;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+    width: 100%;
+}
+
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+    background-color: rgb(255, 213, 0);
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: black;
+    font-family: comic-font;
+}
+
+.navbar a:hover{
+    color: rgb(224, 54, 82)
 }
