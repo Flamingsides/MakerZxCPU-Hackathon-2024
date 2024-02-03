@@ -62,7 +62,7 @@
 	animation-fill-mode: forwards;
 }
 
-#account, .item-details-page {
+#account, .item-details-page, .product-details {
     font-family: comic-font;
 }
 
